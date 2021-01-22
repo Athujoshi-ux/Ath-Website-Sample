@@ -3,7 +3,7 @@ background-color: rgb(244, 248, 244);
 color: rgb(17, 17, 17);
 }
 .title {
-    background-image: url(mages/HwIOqV.jpg);
+    background-image: url(Images/HwIOqV.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -414,7 +414,7 @@ h2 {
     margin-top: 40px;
     color: rgb(189, 87, 3);
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 480px){
     .files {
         font-size: 60%;
         padding-bottom: 15px;
@@ -433,7 +433,7 @@ h2 {
         max-height: 5%;
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
     fieldset, form {
         font-size: 70%;
         width: 60%;
@@ -448,7 +448,7 @@ h2 {
         height: 20px;
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
     .highlight {
         font-size: 70%;
     }
@@ -506,7 +506,7 @@ h2 {
         transform: translateX(560%) rotate(180deg);
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
     @keyframes spin {
         50% {
             transform: translateX(200%) scale(0.5);
@@ -546,7 +546,7 @@ h2 {
     opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
     .Gallery img {
     width: 120px;
     height: 100px;
@@ -563,7 +563,7 @@ h2 {
     display: none;
     cursor: pointer;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
 .toggle-btn-visible {
     display: block;
 }
