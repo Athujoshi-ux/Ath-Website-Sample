@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Sample Web Site</title>
+        <meta name="viewport" content="width=device width, initial scale=1">
+        <link rel="stylesheet" href="CSS Course.css">
+        <link rel="stylesheet" href="lightbox.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/cycle2.js"></script>
+        <script type="text/javascript" src="js/declarativeToggle.js"></script>
+        <script type="text/javascript" src="js/jquery.lightbox.js"></script>
+        <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+        <link rel="icon" type="image/png" sizes="192x192"  href="Favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+        <link rel="manifest" href="Favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="Favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header class="title">
+            <p>This is the sample web page created by Atharva Joshi</p>
+        </header>
+        <video autoplay muted loop id="myVideo">
+        <source src="Video/4K_Silver_White_Sparkles_loop_Videvo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+        </video>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+           </div>
+            <div class="fix"></div>
+          </div>
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+          </div>
+          <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    
+        <h1>Homepage</h1>
+        <p class="center">Welcome to the Homepage. Learn about my <a href="favourite colours.html">favourite colours.</a></p>
+
+        <h2>Page Layout with Floats</h2>
+        <span data-toggle-target=".cssnav" class="toggle-btn">MENU</span>
+        <nav class="cssnav">
+            <ul>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="fix"></div>
+        <header class="australia">
+        <p class="monash">
+            My interest in the field of Civil Engineering developed due to my father because he is also a civil engineer and he has always inspired me in choosing this field as a career. During my Higher Secondary Education, my father’s office was on a building site and he sometimes took me there with him. I was extremely fascinated with the way a building is constructed on site and that’s why I decided to pursue bachelors in civil engineering after my Higher Secondary Education
+        </p>
+        <p class="victoria">
+            My father served as an Executive Engineer (Civil) for 30 years in Bharat Sanchar Nigam Ltd. (BSNL). My mother is a housewife and she pursue hobbies like painting, sketching and dramatization. Also, she sometimes gives cricket coaching to girls, as she was a former University Level Cricketer. I also have a younger brother who is currently in 12th grade in Shivaji Science College and wants to become a Surgeon.
+        </p>
+        <div class="fix"></div>
+        </header>
+
+        <h2>Images on the Web</h2>
+        <div class="img">
+            <img src="Images/pexels-photo-531880.jpeg" alt="Anjali Eye Donation Drawing">
+            <img src="Images/photo-1522865080725-2a9ea1fcb94e.jpg" alt="Nature 2">
+            <div class="imganj"><p>This image is originally captured by Anjali Joshi</p></div>
+            <div class="imgang"><p>This image is originally captured by Girish Joshi</p></div>
+        </div>
+
+        <div class="files">
+            <div class="aud">
+                <h2>Music</h2>
+        <p>I have composed this music and attached the <strong>sample</strong> of the same</p>
+        <audio controls>
+            <source src="Audio/War Song.mp3" type="audio/mp3">
+        </audio>    
+            </div>
+        <div class="vid">
+            <h2><em>HD</em> Video</h2>
+        <p>&lsquo;I have recorded a video on Conjouring.Attached is the sample.&rsquo;</p>
+        <video controls>
+            <source src="Video/big_buck_bunny_720p_10mb.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="fix"></div>
+         </div>
+
+        <h1>Personal Information</h1>
+        <form>
+            <label for="first name">First Name:</label>
+            <input id="first name" type="text" placeholder="First Name">
+            <label for="last name">Last Name:</label>
+            <input id="last name" type="text" placeholder="Last Name">
+            <label for="Email id">Email id:</label> 
+            <input id="Email id" type="email" placeholder="Email"> 
+            <label for="your description">Your Description</label>
+            <textarea id="your description" name="your descrption" placeholder="Description"></textarea>
+            <input type="checkbox" id="rememberme" name="info" cheked="cheked" value="yes"><label for="rememberme">Remember Data</label>
+            <input type="Submit" value="Sign in">        
+        </form>
+        <h1>Favorites</h1>
+        <fieldset>
+        <label for="favouritecolour">What is your favourite colour?</label>
+        <select id="favouritecolour" name="favouritecolour">
+            <option value="colourred">Red</option>
+            <option value="colouryellow">Yellow</option>
+            <option value="colourorange">Orange</option>
+            <option value="colourpurple">Purple</option>
+            <option value="colourgreen">Green</option>
+            <option value="colourblue">Blue</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favorite meal</legend>
+            <input type="radio" id="breakfast" name="favouritemeal"><Label for="breakfast">Breakfast</Label>
+            <input type="radio" id="lunch" name="favouritemeal"><Label for="lunch">Lunch</Label>
+            <input type="radio" id="snacks" name="favouritemeal"><Label for="snacks">Snacks</Label>
+            <input type="radio" id="dinner" name="favouritemeal"><Label for="dinner">Dinner</Label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favorite pet</legend>
+            <input type="checkbox" id="dog" name="favouritepet"><Label for="dog">Dog</Label>
+            <input type="checkbox" id="cat" name="favouritepet"><Label for="cat">Cat</Label>
+            <input type="checkbox" id="horse" name="favouritepet"><Label for="horse">Horse</Label>
+            <input type="checkbox" id="cow" name="favouritepet"><Label for="cow">Cow</Label>
+        </fieldset>
+        <input type="Submit" value="Submit">
+
+        <h3>Grocery Table</h3>
+        <p class="highlight">The table contans list of items you have purchased</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Counter Number</th>
+                    <th>Price(in Rs)</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bread</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>6</td>
+                    <td>100</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Mathari</td>
+                    <td>4</td>
+                    <td>45</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Boxes</h2>
+        <p class="BoxA">Atharva Joshi</p>
+        <p class="BoxB">Adwait Joshi</p>
+
+        <h2>My Images Gallery</h2>
+        <div class="Gallery"> 
+        <a href="Images/Slide 1.jpg" data-lightbox="josh"><img src="Images/nostalgic_blue_background_03_hd_picture_169784.jpg" alt="Nature 1"></a>       
+        <a href="Images/Slide 3.jpg" data-lightbox="josh"><img src="Images/Slide 2.jpg" alt="Nature 2"></a>
+        <a href="Images/photo-1522865080725-2a9ea1fcb94e.jpg" data-lightbox="josh"><img src="Images/Slide 3.jpg" alt="Nature 3"></a>
+        <div class="fix"></div>
+        </div>
+
+        <div class="star"><img src="images/Star.jpg">
+        <p>THE END!!!</p>
+        </div>
+               
+    </body>
+
+    <footer>
+        &copy; All Rights are Reserved.
+    </footer>
+</html>
